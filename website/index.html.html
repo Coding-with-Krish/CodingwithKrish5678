@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Free Coding Courses</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      background-color: white;
+    }
+    #main {
+      text-align: center;
+    }
+    h1 {
+      font-family: Arial, sans-serif;
+      font-size: 50px;
+    }
+    .button {
+      display: inline-block;
+      margin-top: 50px;
+      padding: 15px 30px;
+      font-size: 20px;
+      font-family: Arial, sans-serif;
+      cursor: pointer;
+      background-color: white;
+      border: 1px solid black;
+    }
+    #modal {
+      display: none;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(255, 255, 255, 0.9);
+      justify-content: center;
+      align-items: center;
+    }
+    #modalContent {
+      background-color: white;
+      padding: 20px;
+      border: 1px solid black;
+      text-align: center;
+    }
+    .linkButton {
+      display: inline-block;
+      margin-top: 20px;
+      padding: 10px 20px;
+      font-size: 20px;
+      font-family: Arial, sans-serif;
+      color: #0000EE;
+      text-decoration: underline;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+
+<div id="main">
+  <h1>Welcome</h1>
+  <div class="button" onclick="showModal()">Python</div>
+</div>
+
+<div id="modal">
+  <div id="modalContent">
+    <h2>Welcome to my free Python course, click the button for the Python course</h2>
+    <div class="linkButton" onclick="openLink()">Click me!</div>
+  </div>
+</div>
+
+<script>
+  function showModal() {
+    document.getElementById('modal').style.display = 'flex';
+  }
+
+  function openLink() {
+    window.open('https://www.youtube.com/@codingwithKrish-v4h/community', '_blank');
+  }
+</script>
+
+</body>
+</html>
